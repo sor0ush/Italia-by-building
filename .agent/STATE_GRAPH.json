@@ -1,0 +1,44 @@
+{
+  "project": "milano-by-building",
+  "reference_repo": "https://github.com/alexbarakov/amsterdam-by-building",
+  "current_node": "NODE_06_VERIFICATION_E2E",
+  "status": "COMPLETED",
+  "nodes": {
+    "NODE_01_ENV_SETUP": {
+      "name": "Environment & Tooling Setup",
+      "status": "DONE",
+      "dependencies": [],
+      "exit_criteria": "Python virtualenv active, gdal/geopandas/tippecanoe verified in PATH"
+    },
+    "NODE_02_DATA_INGESTION": {
+      "name": "Acquisition of Milano DBT and CENED/ISTAT Open Data",
+      "status": "DONE",
+      "dependencies": ["NODE_01_ENV_SETUP"],
+      "exit_criteria": "Raw shapefile/geojson and building epoch CSV downloaded without login"
+    },
+    "NODE_03_SPATIAL_ETL": {
+      "name": "Spatial Join & Attribute Enrichment",
+      "status": "DONE",
+      "dependencies": ["NODE_02_DATA_INGESTION"],
+      "exit_criteria": "Processed GeoJSON containing geometry, height (float), and build_year (int)"
+    },
+    "NODE_04_TILE_GENERATION": {
+      "name": "Vector Tiling into PMTiles",
+      "status": "DONE",
+      "dependencies": ["NODE_03_SPATIAL_ETL"],
+      "exit_criteria": "milano_buildings.pmtiles generated and valid under pmtiles show/inspect"
+    },
+    "NODE_05_FRONTEND_3D": {
+      "name": "MapLibre GL 3D Extrusion & Time Slider",
+      "status": "DONE",
+      "dependencies": ["NODE_04_TILE_GENERATION"],
+      "exit_criteria": "Web application functioning with 3D buildings extruded by height and colored by epoch"
+    },
+    "NODE_06_VERIFICATION_E2E": {
+      "name": "End-to-End Test and Autonomous Audit",
+      "status": "DONE",
+      "dependencies": ["NODE_05_FRONTEND_3D"],
+      "exit_criteria": "Local HTTP server serving map, zero 404/console errors, test script returns exit code 0"
+    }
+  }
+}

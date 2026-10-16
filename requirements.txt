@@ -1,0 +1,9 @@
+geopandas>=1.0.0
+shapely>=2.0.0
+requests>=2.31.0
+pyarrow>=15.0.0
+pandas>=2.2.0
+pmtiles>=0.4.0
+tqdm>=4.66.0
+fiona>=1.9.0
+pyproj>=3.6.0

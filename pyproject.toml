@@ -1,0 +1,20 @@
+[project]
+name = "italy-in-building"
+version = "0.1.0"
+description = "Interactive 3D WebGL map of Italian cities with buildings extruded by height and colored by construction epoch"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "geopandas>=1.0.0",
+    "shapely>=2.0.0",
+    "requests>=2.31.0",
+    "pyarrow>=15.0.0",
+    "pandas>=2.2.0",
+    "pmtiles>=0.4.0",
+    "tqdm>=4.66.0",
+    "fiona>=1.9.0",
+    "pyproj>=3.6.0",
+]
+
+[tool.uv]
+package = false
