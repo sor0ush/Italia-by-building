@@ -31,8 +31,8 @@
 - Implemented `pipeline/verify_all.py` performing audits across data, tiles, frontend, and live server.
 - Launched background streaming HTTP server at `http://localhost:8080`.
 
-## Milestone 7: Italy in Building & Railway Deployment
-- Expanded project from Milano into **Italy in Building**:
+## Milestone 7: Italy by Building & Railway Deployment
+- Expanded project from Milano into **Italy by Building**:
   - Implemented multi-city builder `pipeline/build_italian_cities.py`.
   - Built 3D PMTiles vector archives for:
     - **Milano** (237k+ buildings)

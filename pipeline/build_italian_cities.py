@@ -425,7 +425,7 @@ def main():
     os.makedirs(WEB_DIR, exist_ok=True)
 
     print("=" * 60)
-    print("Italy in Building - Multi-City Pipeline Builder")
+    print("Italy by Building - Multi-City Pipeline Builder")
     print("=" * 60)
 
     for city_key, cfg in CITIES_CONFIG.items():

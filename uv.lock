@@ -251,7 +251,7 @@ wheels = [
 ]
 
 [[package]]
-name = "italy-in-building"
+name = "italy-by-building"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

@@ -1,7 +1,7 @@
-# AGENT HAND-OFF DOCUMENT: Italy in Building
+# AGENT HAND-OFF DOCUMENT: Italy by Building
 
 ## 1. Project Goal
-Evolve "Milano by Building" into **"Italy in Building"**: a multi-city 3D WebGL architectural atlas for Italy with an interactive landing city selector and full Railway deployment support.
+Evolve "Milano by Building" into **"Italy by Building"**: a multi-city 3D WebGL architectural atlas for Italy with an interactive landing city selector and full Railway deployment support.
 Supported Cities:
 - **Milano** (Lombardia - 237k+ buildings)
 - **Torino** (Piemonte)

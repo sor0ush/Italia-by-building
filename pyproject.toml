@@ -1,5 +1,5 @@
 [project]
-name = "italy-in-building"
+name = "italy-by-building"
 version = "0.1.0"
 description = "Interactive 3D WebGL map of Italian cities with buildings extruded by height and colored by construction epoch"
 readme = "README.md"

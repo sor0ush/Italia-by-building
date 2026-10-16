@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 verify_all.py
-End-to-End Verification and Autonomous Audit for 'Italy in Building'.
+End-to-End Verification and Autonomous Audit for 'Italy by Building'.
 
 Performs comprehensive audits across:
 1. Multi-City Architecture & Metadata (web/cities_metadata.json)
@@ -168,7 +168,7 @@ def audit_server_e2e():
 
 def main():
     print("=" * 60)
-    print("Italy in Building - Comprehensive Audit")
+    print("Italy by Building - Comprehensive Audit")
     print("=" * 60)
     audit_cities_metadata()
     audit_pmtiles_all_cities()

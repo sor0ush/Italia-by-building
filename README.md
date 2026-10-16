@@ -1,4 +1,4 @@
-# Italy in Building 🇮🇹
+# Italy by Building 🇮🇹
 
 Un atlante architettonico interattivo in 3D WebGL per esplorare le città d'Italia: ogni singolo edificio è estruso alla sua vera altezza volumetrica e colorato in base all'epoca storica di costruzione, con uno slider temporale interattivo, navigazione per monumenti storici e selezione delle città. Ispirato ad [Amsterdam by Building](https://github.com/alexbarakov/amsterdam-by-building).
 
@@ -87,6 +87,6 @@ uv run python pipeline/build_italian_cities.py
 uv run python pipeline/verify_all.py
 
 # 3. Test build container Docker locale
-docker build -t italy-in-building .
-docker run -p 8080:8080 -e PORT=8080 italy-in-building
+docker build -t italy-by-building .
+docker run -p 8080:8080 -e PORT=8080 italy-by-building
 ```

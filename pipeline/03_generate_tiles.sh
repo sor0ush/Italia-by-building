@@ -9,7 +9,7 @@ OUTPUT_PMTILES="data/tiles/milano_buildings.pmtiles"
 WEB_PMTILES="web/milano_buildings.pmtiles"
 
 echo "============================================================"
-echo "Italy in Building - PMTiles Generation (Milano)"
+echo "Italy by Building - PMTiles Generation (Milano)"
 echo "============================================================"
 
 cd "${ROOT_DIR}"
@@ -28,7 +28,7 @@ echo "Target PMTiles: ${OUTPUT_PMTILES}"
 tippecanoe \
     --output="${WEB_PMTILES}" \
     --layer=buildings \
-    --name="Italy in Building - Milano" \
+    --name="Italy by Building - Milano" \
     --attribution="Comune di Milano / Open Data" \
     --minimum-zoom=12 \
     --maximum-zoom=16 \

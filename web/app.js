@@ -1,6 +1,6 @@
 /**
  * app.js
- * Italy in Building - 3D Multi-City Architectural Map
+ * Italy by Building - 3D Multi-City Architectural Map
  * Powered by MapLibre GL JS + PMTiles v3
  */
 
