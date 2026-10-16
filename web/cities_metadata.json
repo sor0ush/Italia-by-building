@@ -1,0 +1,165 @@
+{
+  "milano": {
+    "name": "Milano",
+    "region": "Lombardia",
+    "tiles": "milano_buildings.pmtiles",
+    "buildingCount": 237743,
+    "yearSpan": "372 – 2026",
+    "description": "Capitale economica d'Italia: dal Duomo gotico e Castello Sforzesco ai grattacieli moderni di CityLife e Porta Nuova.",
+    "center": [9.1919, 45.4642],
+    "zoom": 15.8,
+    "pitch": 58,
+    "bearing": -20,
+    "landmarks": [
+      { "id": "duomo", "name": "Duomo di Milano", "year": 1386, "center": [9.1919, 45.4642], "zoom": 16.5, "pitch": 60, "bearing": -25 },
+      { "id": "castello", "name": "Castello Sforzesco", "year": 1450, "center": [9.1793, 45.4705], "zoom": 16.0, "pitch": 55, "bearing": 40 },
+      { "id": "scala", "name": "Teatro alla Scala", "year": 1778, "center": [9.1895, 45.4674], "zoom": 16.8, "pitch": 55, "bearing": 10 },
+      { "id": "galleria", "name": "Galleria Vittorio Emanuele", "year": 1865, "center": [9.1899, 45.4658], "zoom": 16.5, "pitch": 55, "bearing": -10 },
+      { "id": "velasca", "name": "Torre Velasca", "year": 1958, "center": [9.1898, 45.4600], "zoom": 16.8, "pitch": 65, "bearing": 30 },
+      { "id": "pirelli", "name": "Grattacielo Pirelli", "year": 1960, "center": [9.2008, 45.4847], "zoom": 16.5, "pitch": 60, "bearing": -40 },
+      { "id": "portanuova", "name": "Porta Nuova & Bosco Verticale", "year": 2014, "center": [9.1901, 45.4858], "zoom": 16.2, "pitch": 62, "bearing": 30 },
+      { "id": "citylife", "name": "CityLife (Le Tre Torri)", "year": 2017, "center": [9.1565, 45.4770], "zoom": 16.0, "pitch": 60, "bearing": -60 }
+    ]
+  },
+  "torino": {
+    "name": "Torino",
+    "region": "Piemonte",
+    "tiles": "torino_buildings.pmtiles",
+    "buildingCount": 1282,
+    "yearSpan": "1348 – 2026",
+    "description": "Prima capitale d'Italia: rigorosa pianta romana, magnifiche residenze reali sabaude, piazze barocche e la Mole Antonelliana.",
+    "center": [7.6869, 45.0703],
+    "zoom": 15.8,
+    "pitch": 58,
+    "bearing": -15,
+    "landmarks": [
+      { "id": "mole", "name": "Mole Antonelliana", "year": 1889, "center": [7.6931, 45.0689], "zoom": 16.8, "pitch": 65, "bearing": -30 },
+      { "id": "reale", "name": "Palazzo Reale", "year": 1646, "center": [7.6858, 45.0731], "zoom": 16.5, "pitch": 55, "bearing": 20 },
+      { "id": "madama", "name": "Palazzo Madama", "year": 1348, "center": [7.6864, 45.0711], "zoom": 16.5, "pitch": 55, "bearing": -10 },
+      { "id": "sancarlo", "name": "Piazza San Carlo", "year": 1638, "center": [7.6828, 45.0678], "zoom": 16.5, "pitch": 55, "bearing": 0 },
+      { "id": "duomo_to", "name": "Duomo di San Giovanni", "year": 1498, "center": [7.6842, 45.0733], "zoom": 16.8, "pitch": 55, "bearing": 35 }
+    ]
+  },
+  "bologna": {
+    "name": "Bologna",
+    "region": "Emilia-Romagna",
+    "tiles": "bologna_buildings.pmtiles",
+    "buildingCount": 4079,
+    "yearSpan": "1109 – 2026",
+    "description": "La Dotta, la Grassa, la Rossa: le Due Torri medievali, la basilica incompiuta di San Petronio e i celebri portici Patrimonio UNESCO.",
+    "center": [11.3426, 44.4949],
+    "zoom": 16.0,
+    "pitch": 58,
+    "bearing": 25,
+    "landmarks": [
+      { "id": "duetorri", "name": "Due Torri (Asinelli & Garisenda)", "year": 1109, "center": [11.3467, 44.4942], "zoom": 17.0, "pitch": 65, "bearing": 45 },
+      { "id": "sanpetronio", "name": "Basilica di San Petronio", "year": 1390, "center": [11.3431, 44.4931], "zoom": 16.5, "pitch": 55, "bearing": -15 },
+      { "id": "piazzamaggiore", "name": "Piazza Maggiore & D'Accursio", "year": 1200, "center": [11.3433, 44.4939], "zoom": 16.5, "pitch": 55, "bearing": 10 },
+      { "id": "archiginnasio", "name": "Palazzo dell'Archiginnasio", "year": 1563, "center": [11.3436, 44.4922], "zoom": 16.8, "pitch": 58, "bearing": 20 }
+    ]
+  },
+  "monza": {
+    "name": "Monza",
+    "region": "Lombardia",
+    "tiles": "monza_buildings.pmtiles",
+    "buildingCount": 1983,
+    "yearSpan": "1293 – 2026",
+    "description": "Città dei Longobardi e dei Savoia: custode della Corona Ferrea, della sontuosa Villa Reale del Piermarini e dell'Arengario civico.",
+    "center": [9.2744, 45.5845],
+    "zoom": 16.0,
+    "pitch": 58,
+    "bearing": -20,
+    "landmarks": [
+      { "id": "duomo_mz", "name": "Duomo di Monza", "year": 1300, "center": [9.2747, 45.5833], "zoom": 16.8, "pitch": 60, "bearing": -20 },
+      { "id": "arengario", "name": "Arengario Medievale", "year": 1293, "center": [9.2736, 45.5839], "zoom": 16.8, "pitch": 55, "bearing": 15 },
+      { "id": "villareale", "name": "Villa Reale del Piermarini", "year": 1777, "center": [9.2764, 45.5925], "zoom": 16.2, "pitch": 58, "bearing": 0 },
+      { "id": "ponteleoni", "name": "Ponte dei Leoni", "year": 1840, "center": [9.2740, 45.5855], "zoom": 16.8, "pitch": 50, "bearing": -35 }
+    ]
+  },
+  "pavia": {
+    "name": "Pavia",
+    "region": "Lombardia",
+    "tiles": "pavia_buildings.pmtiles",
+    "buildingCount": 12757,
+    "yearSpan": "1132 – 2026",
+    "description": "Antica capitale longobarda sul Ticino: dal centro storico, Duomo e Castello Visconteo, all'espansione moderna di Città Giardino, Vallone e Policlinico San Matteo.",
+    "center": [9.1580, 45.1890],
+    "zoom": 14.8,
+    "pitch": 56,
+    "bearing": 15,
+    "landmarks": [
+      { "id": "pontecoperto", "name": "Ponte Coperto sul Ticino", "year": 1354, "center": [9.1517, 45.1819], "zoom": 16.6, "pitch": 55, "bearing": 30 },
+      { "id": "castellopv", "name": "Castello Visconteo", "year": 1360, "center": [9.1578, 45.1908], "zoom": 16.3, "pitch": 55, "bearing": -15 },
+      { "id": "duomopv", "name": "Duomo di Pavia", "year": 1488, "center": [9.1528, 45.1856], "zoom": 16.8, "pitch": 60, "bearing": 10 },
+      { "id": "cittagiardino", "name": "Città Giardino", "year": 1965, "center": [9.1405, 45.2015], "zoom": 16.2, "pitch": 58, "bearing": 20 },
+      { "id": "vallone", "name": "Vallone", "year": 1968, "center": [9.1780, 45.2020], "zoom": 16.2, "pitch": 58, "bearing": -20 },
+      { "id": "sanmatteo", "name": "Policlinico San Matteo", "year": 1932, "center": [9.1460, 45.1990], "zoom": 16.3, "pitch": 60, "bearing": 15 },
+      { "id": "cieldoro", "name": "San Pietro in Ciel d'Oro", "year": 1132, "center": [9.1534, 45.1925], "zoom": 16.8, "pitch": 55, "bearing": 10 },
+      { "id": "sanmichele", "name": "Basilica di San Michele", "year": 1155, "center": [9.1611, 45.1822], "zoom": 16.8, "pitch": 55, "bearing": -20 },
+      { "id": "unipv", "name": "Università di Pavia", "year": 1361, "center": [9.1564, 45.1867], "zoom": 16.8, "pitch": 55, "bearing": 15 },
+      { "id": "borgoticino", "name": "Borgo Ticino", "year": 1300, "center": [9.1520, 45.1765], "zoom": 16.4, "pitch": 55, "bearing": 10 }
+    ]
+  },
+  "como": {
+    "name": "Como",
+    "region": "Lombardia",
+    "tiles": "como_buildings.pmtiles",
+    "buildingCount": 3462,
+    "yearSpan": "1215 – 2026",
+    "description": "Porta delle Alpi e del Lago: incantevole centro murato medievale, gioiello del Razionalismo comasco con Giuseppe Terragni e il Tempio Voltiano.",
+    "center": [9.0852, 45.8081],
+    "zoom": 15.2,
+    "pitch": 58,
+    "bearing": -30,
+    "landmarks": [
+      { "id": "duomoco", "name": "Cattedrale di Santa Maria Assunta", "year": 1396, "center": [9.0833, 45.8117], "zoom": 16.8, "pitch": 60, "bearing": -20 },
+      { "id": "broletto", "name": "Broletto Medievale", "year": 1215, "center": [9.0839, 45.8114], "zoom": 16.8, "pitch": 55, "bearing": 15 },
+      { "id": "casadelfascio", "name": "Casa del Fascio (Terragni)", "year": 1936, "center": [9.0864, 45.8111], "zoom": 16.8, "pitch": 62, "bearing": 45 },
+      { "id": "tempiovoltiano", "name": "Tempio Voltiano", "year": 1927, "center": [9.0756, 45.8133], "zoom": 16.8, "pitch": 55, "bearing": -40 },
+      { "id": "villaolmo", "name": "Villa Olmo", "year": 1797, "center": [9.0667, 45.8206], "zoom": 16.2, "pitch": 55, "bearing": 25 }
+    ]
+  },
+  "barletta": {
+    "name": "Barletta",
+    "region": "Puglia",
+    "tiles": "barletta_buildings.pmtiles",
+    "buildingCount": 5285,
+    "yearSpan": "450 – 2026",
+    "description": "Città della Disfida e dell'Adriatico: dal centro storico con Castello Svevo e Cattedrale, ai quartieri Borgovilla, Patalini, Settefrati e Zona 167.",
+    "center": [16.2800, 41.3180],
+    "zoom": 14.8,
+    "pitch": 55,
+    "bearing": 30,
+    "landmarks": [
+      { "id": "castelloba", "name": "Castello Svevo di Barletta", "year": 1202, "center": [16.2892, 41.3203], "zoom": 16.5, "pitch": 58, "bearing": 40 },
+      { "id": "cattedraleba", "name": "Cattedrale Santa Maria Maggiore", "year": 1126, "center": [16.2858, 41.3200], "zoom": 16.8, "pitch": 55, "bearing": 20 },
+      { "id": "colosso", "name": "Colosso di Barletta (Eraclio)", "year": 450, "center": [16.2828, 41.3183], "zoom": 17.0, "pitch": 55, "bearing": -10 },
+      { "id": "disfida", "name": "Cantina della Disfida", "year": 1503, "center": [16.2847, 41.3192], "zoom": 17.0, "pitch": 55, "bearing": 15 },
+      { "id": "borgovilla", "name": "Borgovilla", "year": 1920, "center": [16.2715, 41.3135], "zoom": 16.2, "pitch": 58, "bearing": 25 },
+      { "id": "patalini", "name": "Patalini", "year": 1970, "center": [16.2790, 41.3110], "zoom": 16.2, "pitch": 55, "bearing": 15 },
+      { "id": "settefrati", "name": "Settefrati", "year": 1930, "center": [16.2710, 41.3210], "zoom": 16.2, "pitch": 58, "bearing": -15 },
+      { "id": "zona167", "name": "Zona 167 - Parco Umanità", "year": 1985, "center": [16.2785, 41.3030], "zoom": 16.0, "pitch": 58, "bearing": 20 }
+    ]
+  },
+  "fano": {
+    "name": "Fano",
+    "region": "Marche",
+    "tiles": "fano_buildings.pmtiles",
+    "buildingCount": 8284,
+    "yearSpan": "9 – 2026",
+    "description": "Fanum Fortunae sull'Adriatico: dall'Arco d'Augusto e mura romane, ai quartieri Vallato, Sassonia, Bellocchi e Lido.",
+    "center": [13.0182, 43.8436],
+    "zoom": 14.8,
+    "pitch": 55,
+    "bearing": -15,
+    "landmarks": [
+      { "id": "arcoaugusto", "name": "Arco d'Augusto (9 d.C.)", "year": 9, "center": [13.0139, 43.8431], "zoom": 17.2, "pitch": 60, "bearing": -20 },
+      { "id": "roccafano", "name": "Rocca Malatestiana", "year": 1452, "center": [13.0194, 43.8458], "zoom": 16.6, "pitch": 58, "bearing": -40 },
+      { "id": "muraromane", "name": "Mura Romane Augustee", "year": 9, "center": [13.0142, 43.8428], "zoom": 16.8, "pitch": 55, "bearing": 30 },
+      { "id": "vallato", "name": "Vallato", "year": 1960, "center": [13.0110, 43.8510], "zoom": 16.2, "pitch": 55, "bearing": 10 },
+      { "id": "sassonia", "name": "Sassonia & Porto", "year": 1920, "center": [13.0270, 43.8460], "zoom": 16.2, "pitch": 58, "bearing": -25 },
+      { "id": "bellocchi", "name": "Bellocchi", "year": 1975, "center": [12.9980, 43.8320], "zoom": 16.0, "pitch": 55, "bearing": 30 },
+      { "id": "sangallo", "name": "Bastione del Sangallo", "year": 1552, "center": [13.0189, 43.8419], "zoom": 16.8, "pitch": 55, "bearing": 20 }
+    ]
+  }
+}

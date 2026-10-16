@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italy in Building - Atlante Architettonico 3D d'Italia</title>
+    <!-- MapLibre GL CSS -->
+    <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="map"></div>
+
+    <!-- City Selection Landing Modal -->
+    <div id="city-modal" class="modal-overlay">
+        <div class="glass-panel modal-content">
+            <div class="modal-header">
+                <div class="brand-pill">
+                    <span class="flag-icon">🇮🇹</span>
+                    <span>ITALY IN BUILDING</span>
+                </div>
+                <h2>Esplora le Città d'Italia in 3D</h2>
+                <p class="modal-sub">Visualizza l'evoluzione architettonica, le altezze volumetriche reali e le epoche storiche di costruzione di ogni singolo edificio.</p>
+            </div>
+
+            <div class="city-grid" id="city-cards-container">
+                <!-- Dynamically populated or static cards -->
+            </div>
+
+            <div class="modal-footer">
+                <span class="data-badge">⚡ PMTiles v3 Serverless Streaming</span>
+                <span class="data-badge">🌐 MapLibre GL 3D Engine</span>
+                <span class="data-badge">🏛️ Open Data & DBT Certificati</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Navigation & Stats Bar -->
+    <header class="glass-panel header-panel">
+        <div class="brand">
+            <button id="open-city-modal-btn" class="city-selector-btn" title="Cambia città">
+                <span class="flag-mini">🇮🇹</span>
+                <span id="active-city-name">Milano</span>
+                <span class="region-badge" id="active-city-region">Lombardia</span>
+                <span class="dropdown-chevron">▼</span>
+            </button>
+            <div class="app-titles">
+                <h1>Italy in Building</h1>
+                <p class="subtitle" id="city-tagline">Ogni edificio estruso alla sua vera altezza & colorato per epoca</p>
+            </div>
+        </div>
+        <div class="quick-stats">
+            <div class="stat-card">
+                <span class="stat-label">EDIFICI TOTALI</span>
+                <span class="stat-value" id="stat-total-count">237,743</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">IN MOSTRA</span>
+                <span class="stat-value" id="stat-filtered-count">237,743</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">ANNO CORRENTE</span>
+                <span class="stat-value highlight" id="stat-current-year">2026</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Landmark Navigator -->
+    <nav class="glass-panel landmark-nav">
+        <span class="nav-title">MONUMENTI & QUARTIERI</span>
+        <div class="landmark-buttons" id="landmark-buttons-container">
+            <!-- Dynamically populated per city -->
+        </div>
+    </nav>
+
+    <!-- Time Slider Controller -->
+    <div class="glass-panel timeline-panel">
+        <div class="timeline-header">
+            <div class="timeline-controls">
+                <button id="play-pause-btn" class="ctrl-btn" title="Anima la crescita storica">
+                    <span id="play-icon">▶</span>
+                    <span id="play-text">PLAY</span>
+                </button>
+                <button id="reset-btn" class="ctrl-btn secondary" title="Mostra tutti gli edifici">TUTTI</button>
+            </div>
+            <div class="slider-readout">
+                <span class="readout-label">COSTRUITO FINO AL:</span>
+                <span class="readout-year" id="slider-year-label">2026</span>
+            </div>
+            <div class="speed-control">
+                <span>VELOCITÀ:</span>
+                <select id="playback-speed">
+                    <option value="1">1x</option>
+                    <option value="2" selected>2x</option>
+                    <option value="5">5x</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="slider-container">
+            <input type="range" id="time-slider" min="1000" max="2026" step="1" value="2026" />
+            <div class="slider-ticks" id="slider-ticks">
+                <span style="left: 0%;">Antico</span>
+                <span style="left: 20%;">1800</span>
+                <span style="left: 38%;">1900</span>
+                <span style="left: 55%;">1945</span>
+                <span style="left: 70%;">1970</span>
+                <span style="left: 85%;">2000</span>
+                <span style="left: 100%;">Oggi</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chronological Epoch Legend -->
+    <div class="glass-panel legend-panel">
+        <div class="legend-title">EPOCA DI COSTRUZIONE</div>
+        <div class="legend-items">
+            <div class="legend-item"><span class="color-swatch" style="background: #3a0ca3;"></span><span>&lt; 1800 (Antico / Rinascimentale)</span></div>
+            <div class="legend-item"><span class="color-swatch" style="background: #4361ee;"></span><span>1800 – 1899 (Ottocento)</span></div>
+            <div class="legend-item"><span class="color-swatch" style="background: #4cc9f0;"></span><span>1900 – 1945 (Primo Novecento)</span></div>
+            <div class="legend-item"><span class="color-swatch" style="background: #06d6a0;"></span><span>1946 – 1970 (Ricostruzione & Boom)</span></div>
+            <div class="legend-item"><span class="color-swatch" style="background: #ffd166;"></span><span>1971 – 1990 (Tardo Novecento)</span></div>
+            <div class="legend-item"><span class="color-swatch" style="background: #f77f00;"></span><span>1991 – 2010 (Fine Millennio)</span></div>
+            <div class="legend-item"><span class="color-swatch" style="background: #e63946;"></span><span>2011 – Oggi (Contemporaneo)</span></div>
+        </div>
+    </div>
+
+    <!-- Building Details Card -->
+    <div class="glass-panel tooltip-panel" id="building-card">
+        <div class="card-header">
+            <span class="card-type" id="card-type">DETTAGLIO EDIFICIO</span>
+            <span class="card-id" id="card-id">#--</span>
+        </div>
+        <h3 class="card-title" id="card-name">Passa il cursore su un edificio</h3>
+        <div class="card-grid">
+            <div class="card-stat">
+                <span class="lbl">ALTEZZA</span>
+                <span class="val" id="card-height">-- m</span>
+            </div>
+            <div class="card-stat">
+                <span class="lbl">ANNO</span>
+                <span class="val" id="card-year">--</span>
+            </div>
+            <div class="card-stat">
+                <span class="lbl">EPOCA</span>
+                <span class="val" id="card-epoch">--</span>
+            </div>
+            <div class="card-stat">
+                <span class="lbl">PIANI STIMATI</span>
+                <span class="val" id="card-floors">--</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PMTiles and MapLibre GL JS -->
+    <script src="https://unpkg.com/pmtiles@3.0.7/dist/pmtiles.js"></script>
+    <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
