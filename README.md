@@ -18,7 +18,7 @@ All'avvio dell'applicazione o cliccando sul pulsante **🇮🇹 Città** nella t
 | **Milano** | Lombardia | **237,743** | 372 d.C. – 2026 | Duomo, Castello Sforzesco, Scala, Galleria, Velasca, Pirelli, CityLife, Porta Nuova |
 | **Torino** | Piemonte | **1,282** | 1348 – 2026 | Mole Antonelliana, Palazzo Reale, Palazzo Madama, Piazza San Carlo, Intesa Sanpaolo |
 | **Bologna** | Emilia-Romagna | **4,079** | 1109 – 2026 | Due Torri (Asinelli & Garisenda), Basilica di San Petronio, Piazza Maggiore, Archiginnasio |
-| **Monza** | Lombardia | **1,983** | 1293 – 2026 | Villa Reale del Piermarini, Duomo di Monza, Arengario Medievale, Ponte dei Leoni |
+| **Monza** | Lombardia | **20,512** | 1293 – 2026 | Duomo, Arengario, Villa Reale, Parco, Autodromo Nazionale, San Fruttuoso, Triante, Cederna |
 | **Pavia** | Lombardia | **12,757** | 1132 – 2026 | Città Giardino, Vallone, Policlinico San Matteo, Polo Cravino, Ponte Coperto, Castello, Duomo |
 | **Como** | Lombardia | **3,462** | 1215 – 2026 | Cattedrale Santa Maria Assunta, Broletto, Casa del Fascio (Terragni), Tempio Voltiano, Villa Olmo |
 | **Barletta** | Puglia | **5,285** | 450 d.C. – 2026 | Castello Svevo, Cattedrale, Borgovilla, Patalini, Settefrati, Zona 167 - Parco Umanità, Colosso |

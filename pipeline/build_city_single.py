@@ -25,6 +25,34 @@ TILES_DIR = os.path.join(DATA_DIR, "tiles")
 WEB_DIR = os.path.join(ROOT_DIR, "web")
 
 CITIES = {
+    "monza": {
+        "title": "Monza",
+        "center": [9.2744, 45.5845],
+        "bboxes": [
+            (9.230, 45.555, 9.260, 45.575), # 1: San Fruttuoso Sud / Casignolo
+            (9.230, 45.575, 9.260, 45.595), # 2: San Fruttuoso Nord / Triante
+            (9.230, 45.595, 9.260, 45.615), # 3: San Gerardo Nuovo / Cazzaniga
+            (9.260, 45.555, 9.290, 45.575), # 4: San Rocco / Stazione Sud
+            (9.260, 45.575, 9.290, 45.595), # 5: Centro Storico, Duomo, Arengario
+            (9.260, 45.595, 9.290, 45.615), # 6: Villa Reale, Giardini Reali
+            (9.290, 45.555, 9.320, 45.575), # 7: Sant'Albino / Cederna Sud
+            (9.290, 45.575, 9.320, 45.595), # 8: Cederna Nord / Sobborghi / Stadio
+            (9.290, 45.595, 9.320, 45.615), # 9: Parco Sud-Est
+            (9.270, 45.615, 9.295, 45.630), # 10: Autodromo Nazionale Monza
+        ],
+        "landmarks": [
+            (9.2747, 45.5833, 80, 1300, "Duomo di Monza"),
+            (9.2736, 45.5839, 60, 1293, "Arengario Medievale"),
+            (9.2764, 45.5925, 120, 1777, "Villa Reale del Piermarini"),
+            (9.2740, 45.5855, 60, 1840, "Ponte dei Leoni"),
+            (9.2800, 45.6150, 150, 1922, "Autodromo Nazionale Monza"),
+            (9.2450, 45.5720, 90, 1960, "San Fruttuoso"),
+            (9.2560, 45.5780, 90, 1965, "Triante"),
+            (9.2680, 45.5880, 80, 1930, "San Biagio"),
+            (9.2970, 45.5790, 90, 1960, "Cederna"),
+            (9.2480, 45.6020, 120, 1975, "Ospedale San Gerardo")
+        ]
+    },
     "pavia": {
         "title": "Pavia",
         "center": [9.1580, 45.1890],
